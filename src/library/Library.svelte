@@ -4,7 +4,7 @@
   import Button from "../common/Button.svelte";
   import { httpGet } from "../common/api.js";
 
-  export let onClick;
+  export let onBookSelect;
 
   let books = [];
   onMount(async function () {
@@ -24,7 +24,7 @@
   Go home, and share them with your family.
 </p>
 <Button>+ Add Book</Button>
-<BookGrid {books} {onClick} />
+<BookGrid {books} {onBookSelect} />
 
 <style>
   header {

@@ -19,7 +19,7 @@
   <span
     class="cover"
     style={isValidUrl(book.cover)
-      ? "background-image: url (" + book.cover + ")"
+      ? "background-image: url(" + book.cover + ")"
       : ""}
   >
     <span class="title"> {book.title || ""}</span>
