@@ -5,15 +5,9 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "run-p dev:server dev:client",
-<<<<<<< HEAD
     "dev:client": "rollup -c -w",
     "dev:server": "json-server --watch db.json",
     "start": "sirv public --no-clear"
-=======
-    "dev:client": "rollup -c -w" ,
-    "dev:server": "json-server --watch db.json" ,
-    "start": "sirv public "
->>>>>>> 556ba62d1c8cf6f8fa2e61e30dfe903411da09df
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",

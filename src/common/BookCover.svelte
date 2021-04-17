@@ -1,13 +1,16 @@
 <script>
   export let book = {};
+  export let onClick;
+
   function isValidUrl(url) {
     return url && /http.+\.(jpg|png|gif)$/.test(url);
   }
 </script>
 
 <a
-  href="#"
-  class="book book--interactive book-variation{book.variation} {isValidUrl(
+  href={"#"}
+  on:click={() => onClick(book.id)}
+  class="book book--interactive book--variation{book.variation} {isValidUrl(
     book.cover
   )
     ? 'book-cover'
