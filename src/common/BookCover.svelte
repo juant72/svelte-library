@@ -1,4 +1,5 @@
 <script>
+  import { links } from "svelte-routing";
   import { createEventDispatcher } from "svelte";
   export let book = {};
   export let interactive = false;
@@ -12,8 +13,8 @@
 
 {#if interactive}
   <a
-    href={"#"}
-    on:click={() => dispatch("book-select", { id: book.id })}
+    href={"/books/" + book.id}
+    use:links
     class="book book--interactive book--variation{book.variation} {isValidUrl(
       book.cover
     )
