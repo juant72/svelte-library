@@ -41,6 +41,15 @@
       "cover": "",
       "about": "Man hunts whale with a vengeance. In the end, he's the last man stand. I guess he won.",
       "variation": 1
+    },
+    {
+      "title": "The Four Winds",
+      "author": "KRISTIN HANNAH",
+      "cover": "https://booklistqueen.com/wp-content/uploads/the-four-winds-kristin-hannah.jpg",
+      "about": "In the Texas panhandle in 1934, severe drought plagues the land. With crops failing, dust storms whip up, leaving the farmers fighting for survival. In the perilous times of the Great Depression, Elsa Martinelli must decide whether to stay and fight for her land or head west to California which offers her family a better life. Unsurprisingly, Hannah’s new book is one of the best books to read in 2021.",
+      "variation": 2,
+      "favorite": false,
+      "id": 6
     }
   ]
 }

@@ -7,11 +7,12 @@
   <a href={to} on:click use:links class="button">
     <slot />
   </a>
-{:else}{/if}
+{:else}
+  <button on:click class="button">
+    <slot />
+  </button>
+{/if}
 
-<!-- <button on:click class="button">
-  <slot />
-</button> -->
 <style>
   .button {
     background: var(--colorCta);
