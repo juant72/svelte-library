@@ -1,6 +1,8 @@
 <script>
+  import { createEventDispatcher } from "svelte";
   export let book = {};
-  export let onClick;
+
+  const dispatch = createEventDispatcher();
 
   function isValidUrl(url) {
     return url && /http.+\.(jpg|png|gif)$/.test(url);
@@ -9,7 +11,7 @@
 
 <a
   href={"#"}
-  on:click={() => onClick(book.id)}
+  on:click={() => dispatch("book-select", { id: book.id })}
   class="book book--interactive book--variation{book.variation} {isValidUrl(
     book.cover
   )
